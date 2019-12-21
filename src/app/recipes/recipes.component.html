@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-recipe-list (RecipePassedTwice)="recipeClicked($event)"></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <!-- <app-recipe-details *ngIf="recipeDetailObj ; else infoStat"
+        [recipeDetail]="recipeDetailObj"></app-recipe-details>
+        <ng-template #infoStat>
+            <p >Please select a Recipe</p>
+        </ng-template> -->
+        <router-outlet></router-outlet>
+    </div>
+</div>

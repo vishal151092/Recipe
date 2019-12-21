@@ -1,0 +1,5 @@
+<p>recipe-list works!</p>
+
+<div class="row" *ngFor="let recipe of recipeList">
+    <app-recipe-item [recipeItem]="recipe" (click)="onRecipeSelected(recipe)"></app-recipe-item>
+</div>
